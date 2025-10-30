@@ -1,1 +1,7 @@
 @import "tailwindcss";
+/* for custom css */
+.paragraph-centered-blue {
+    text-align: center;
+    color: blue;
+    margin-top: 3rem;
+}
