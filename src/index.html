@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+  <main>
+    <h1 class="text-3xl font-bold underline p-8 bg-red-500">
+      Tailwind Demo
+    </h1>
+  
+    <h2 class = "text-2xl font-bold p-4"> This is a subheading</h2>
+    <p class="text-center p-8">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui illo architecto numquam quam consequatur. Corporis, voluptatem aperiam eius voluptatibus repellat accusamus nam dicta ipsum amet accusantium ea est ad delectus aut earum soluta consectetur? Repellat, impedit beatae! Nulla ipsam similique consequuntur quisquam voluptates. Nostrum atque rerum deserunt voluptatibus sunt consequatur.</p>
+
+    <!-- responsive grid -->
+     <section class="bg-white rounded-lg p-6">
+            <h2 class="text-2xl font-semibold mb-4 text-gray-800">Responsive Grid</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="bg-green-500 text-white p-4 rounded">Column 1</div>
+                <div class="bg-blue-600 text-white p-4 rounded">Column 2</div>
+                <div class="bg-blue-700 text-white p-4 rounded">Column 3</div>
+                <div class="bg-blue-800 text-white p-4 rounded">Column 4</div>
+            </div>
+            <p class="text-sm text-gray-600 mt-2">Resize window to see breakpoints:</p>
+            <code>grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4</code>
+            <p class="text-sm text-gray-600 mt-2">Div block with grid class. Grid columns deifned form smallest to largest along with gap.</p>
+
+        </section>
+
+        <!-- hover and focus -->
+        <section class="bg-white rounded-lg  p-6">
+            <h2 class="text-2xl font-semibold mb-4 text-gray-800">Interactive States</h2>
+            <div class="flex flex-wrap gap-4">
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300">
+                    Hover Me
+                </button>
+                <button class="bg-green-500 hover:bg-green-700 hover:scale-105 transform transition text-white font-bold py-2 px-4 rounded">
+                    Scale on Hover
+                </button>
+                <button class="bg-red-500 hover:shadow-1g text-white font-bold py-2 px-4 rounded transition">
+                    Shadow Effect
+                </button>
+                <input type="text" placeholder="Focus me" class="border-2 border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none px-4 py-2 rounded transition">
+            </div>
+        </section>
+  </main>
+</body>
+</html>
