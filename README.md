@@ -3,7 +3,7 @@
     ********** Get Started with GitHub: **********
 
     !!! IMPORTANT: Once your setup, each time you come here to play around you MUST pull the latest changes from GitHub. Your classmates will slowly make changes that you'll want to pull to your main. 
-    
+    <!--make sure you change everything in ypur own branch and then push it to staging branch, because main is protected.-->
     It's easy, switch to the main branch and type: 
     
         git pull origin main 
