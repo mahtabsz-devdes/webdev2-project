@@ -5,3 +5,14 @@
     color: blue;
     margin-top: 3rem;
 }
+.full-cover {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+}
+.bannerImg{
+    object-position: center;
+	filter: brightness(50%);
+	height: 20rem;
+	object-position: bottom;
+}
