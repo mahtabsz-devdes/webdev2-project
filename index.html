@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +8,27 @@
   <link rel="stylesheet" href="src/output.css">
   <link rel="stylesheet" href="src/input.css">
   
-
+  <!-- run in terminal: npm install tailwindcss @tailwindcss/cli -->
+   <!-- then: npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch -->
 </head>
-<body class="">
+<body class="light:bg-white dark:bg-gray-800 dark:text-white scroll-smooth">
   <!-- bg-gradient-to-br from-gray-100 via-blue-100 to-gray-200 min-h-screen -->
+
+  <nav class="bg-black  sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-8">
+                    <span class="text-white font-bold text-xl">Group 2</span>
+                    <div class="hidden md:flex space-x-4">
+                        <a href="#about" class="text-gray-300 hover:text-white transition">About</a>
+                        <a href="#demo" class="text-gray-300 hover:text-white transition">Demo</a>
+              
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+    </nav>
   <header class="flex flex-row justify-center">
     <div class="overflow-hidden h-1/3 relative">
     <picture class="bannerImg full-cover ">
@@ -37,8 +54,8 @@
   <main class="m-10">
     
   
-    <section class="w-full sm:w-3/4 md:w-1/2 mx-auto">
-      <h2 class="text-2xl font-bold pt-8 w-fit mx-auto"> What is Tailwind and what does it do?</h2>
+    <section id="about"class="w-full sm:w-3/4 md:w-1/2 mx-auto scroll-mt-16">
+      <h2 class="text-2xl font-bold pt-8 w-fit mx-auto mt-16"> What is Tailwind and what does it do?</h2>
       <p class="text-left pt-4 pb-8  mx-auto">Tailwind is described as a “utility-first” framework, as it gives the user access to utility classes which can be applied directly into your html for styling. Tailwind breaks down styles into reusable “utility” classes, which reduces the need for creating your own custom classes in a separate css file.</p>
     </section>
 
@@ -58,8 +75,8 @@
       </p>
     </section>
 
-    <section class="w-full sm:w-3/4 md:w-1/2 mx-auto p-6">
-            <h2 class="text-2xl font-bold mb-4 text-gray-800">Typography</h2>
+    <section id="demo"class="w-full sm:w-3/4 md:w-1/2 mx-auto p-6 scroll-mt-16">
+            <h2 class="text-2xl font-bold mb-4">Typography</h2>
             <h3 class="text-lg font-semibold pb-4">A number of different utility classes are available to style text:</h3>
             <p class="font-sans p-4"><code>font-sans: </code>The quick brown fox jumps over the lazy dog.</p>
             <p class="font-serif p-4"><code>font-serif: </code>The quick brown fox jumps over the lazy dog.</p>
@@ -71,13 +88,14 @@
 
             <h3 class="text-lg font-semibold p-4">Sample Text:</h3>
 
-            <p class="bg-blue-500 p-4">Random text we use to demo </p>
+            <p class="bg-blue-500 text-white p-4">Text we are using for demo purposes </p>
+            <p><code>class="bg-blue-500 text-white p-4"</code></p>
 
         </section>
 
     <!-- responsive grid -->
      <section class="w-full sm:w-3/4 md:w-1/2 mx-auto p-6">
-            <h2 class="text-2xl font-bold mb-4 text-gray-800">Responsive Grid</h2>
+            <h2 class="text-2xl font-bold mb-4 ">Responsive Grid</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                 <div class="bg-blue-500 text-white p-4 rounded">Column 1</div>
                 <div class="bg-blue-600 text-white p-4 rounded">Column 2</div>
@@ -97,7 +115,7 @@
 
         <!-- hover and focus -->
         <section class=" p-6 w-full sm:w-3/4 md:w-1/2 mx-auto ">
-            <h2 class="text-2xl font-bold mb-4 text-gray-800">Interactive States</h2>
+            <h2 class="text-2xl font-bold mb-4">Interactive States</h2>
             <div class="flex flex-wrap gap-4">
                 <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300">
                     Hover Me
@@ -115,8 +133,8 @@
         <!-- section1 -->
          <!-- demo ideas, flex -->
         <section class="p-6 w-full sm:w-3/4 md:w-1/2 mx-auto">
-          <h2 class="text-2xl font-bold mb-4 text-gray-800">Flexbox</h2>
-          <div class="bg-white border-2 border-gray-300 rounded-lg mt-6 mx-auto">
+          <h2 class="text-2xl font-bold mb-4">Flexbox</h2>
+          <div class="bg-white border-2 border-gray-300 rounded-lg mt-6 mx-auto dark:text-black">
             <h2 class="font-bold p-4">Justify flex start: <code class="font-normal">div class="flex flex-row justify-start"</code></h2>
             <div class="flex flex-row justify-start ">
               <div class="bg-red-700 w-1/6 h-12 text-center">1</div>
@@ -158,16 +176,17 @@
         </section>
 
         <section class="p-6 w-full sm:w-3/4 md:w-1/2 mx-auto">
-          <h2 class="text-2xl font-bold mb-4 text-gray-800">Dark mode</h2>
+          <h2 class="text-2xl font-bold mb-4">Dark mode</h2>
           <div class="bg-white dark:bg-black p-6 border-2 border-solid border-gray-300">
-            <h3 class="text-blue-500 dark:text-gray-200">Dark mode testing</h3>
+            <h3 class="text-blue-500 dark:text-gray-200 p-4">Dark mode testing</h3>
+            <p class="p-4"><code>class="bg-white dark:bg-black..."</code></p>
 
           </div>
 
         </section>
 
             <section class="p-6 w-full sm:w-3/4 md:w-1/2 mx-auto">
-            <h2 class="text-2xl font-bold text-gray-800 mb-6">E-commerce Cards Example</h2>
+            <h2 class="text-2xl font-bold mb-6">E-commerce Cards Example</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
                 
                 <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
