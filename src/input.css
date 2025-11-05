@@ -1,5 +1,9 @@
 @import "tailwindcss";
 /* for custom css */
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* @custom-variant light (&:where(.light, .light *)); */
 .paragraph-centered-blue {
     text-align: center;
     color: blue;

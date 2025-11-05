@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tailwind Css Demo</title>
   <link rel="stylesheet" href="normalize-fwd.css">
-  <link rel="stylesheet" href="output.css">
-  <link rel="stylesheet" href="input.css">
-  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <link rel="stylesheet" href="src/output.css">
+  <link rel="stylesheet" href="src/input.css">
+  
 
 </head>
 <body class="">
@@ -69,6 +69,10 @@
             <p class="text-lg p-4"><code>text-lg: </code>This is large text.</p>
             <p class="text-xl p-4"><code>text-xl: </code>This is extra large text.</p>
 
+            <h3 class="text-lg font-semibold p-4">Sample Text:</h3>
+
+            <p class="bg-blue-500 p-4">Random text we use to demo </p>
+
         </section>
 
     <!-- responsive grid -->
@@ -79,11 +83,15 @@
                 <div class="bg-blue-600 text-white p-4 rounded">Column 2</div>
                 <div class="bg-blue-700 text-white p-4 rounded">Column 3</div>
                 <div class="bg-blue-800 text-white p-4 rounded">Column 4</div>
+
+                <!-- <div class="bg-green-600 text-white p-4 rounded">Column 5</div>
+
+                <div class="bg-purple-800 text-white p-4 rounded">Column 6</div> -->
             </div>
             <p class="text-sm text-gray-600 mt-2">Resize window to see breakpoints:</p>
             <code>class value: grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4</code>
             <p class="text-sm text-gray-600 mt-2">Div block with grid class. Grid columns defined from smallest to largest along with gap.</p>
-            <!-- <p class="text-sm text-gray-600 mt-2 paragraph-centered-blue">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi provident debitis inventore veniam voluptatum corrupti eius, natus laborum beatae consectetur labore suscipit tempora, expedita nesciunt, amet soluta at corporis consequatur.</p> -->
+           
 
         </section>
 
@@ -100,7 +108,7 @@
                 <button class="bg-red-500 hover:shadow-lg text-white font-bold py-2 px-4 rounded transition">
                     Shadow Effect
                 </button>
-                <input type="text" placeholder="Focus me" class="border-2 border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none px-4 py-2 rounded transition">
+                <input type="text" placeholder="Focus me" class="border-2 border-gray-300 focus:border-blue-500 focus:ring-blue-200 outline-none px-4 py-2 rounded transition">
             </div>
         </section>
 
@@ -148,6 +156,62 @@
   
           </div>
         </section>
+
+        <section class="p-6 w-full sm:w-3/4 md:w-1/2 mx-auto">
+          <h2 class="text-2xl font-bold mb-4 text-gray-800">Dark mode</h2>
+          <div class="bg-white dark:bg-black p-6 border-2 border-solid border-gray-300">
+            <h3 class="text-blue-500 dark:text-gray-200">Dark mode testing</h3>
+
+          </div>
+
+        </section>
+
+            <section class="p-6 w-full sm:w-3/4 md:w-1/2 mx-auto">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">E-commerce Cards Example</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
+                
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <div class="aspect-square bg-gray-200 relative">
+                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=400&fit=crop" 
+                             alt="Headphones" 
+                             class="w-full h-full object-cover">
+                        <span class="absolute top-2 right-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">SALE</span>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg mb-1">Wireless Headphones</h3>
+                        <p class="text-gray-600 text-sm mb-3">Premium sound quality</p>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="text-gray-400 line-through text-sm">$199</span>
+                                <span class="text-xl font-bold text-gray-900 ml-2">$149</span>
+                            </div>
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition">
+                                Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <div class="aspect-square bg-gray-200 relative">
+                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=400&fit=crop" 
+                             alt="Watch" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg mb-1">Smart Watch</h3>
+                        <p class="text-gray-600 text-sm mb-3">Track your fitness goals</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xl font-bold text-gray-900">$299</span>
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition">
+                                Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        
 
 
   </main>
